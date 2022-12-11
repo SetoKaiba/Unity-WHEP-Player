@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75078797a1aa4319b416265a9827c2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Url: https://172-104-226-116.ip.linodeusercontent.com/api/whep?app=live&stream=test
+  Url: 
   Materials: []
   AudioSources:
   - {fileID: 3694360323097185760}

@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Unity.WebRTC;
+﻿using Unity.WebRTC;
 
 /// <summary>
 /// A class that initializes the WebRTC library and starts it's update loop.
@@ -15,11 +14,11 @@ public class WebRTCManager : Singleton<WebRTCManager>
         StartCoroutine(WebRTC.Update());
     }
 
-    // protected override void OnDestroy_Impl()
-    // {
-    //     WebRTC.Dispose();
-    // }
-    
+    private void OnApplicationQuit()
+    {
+        WebRTC.Dispose();
+    }
+
     public void RegisterPlayer(WebRTCPlayer player)
     {
         // Do nothing, just make sure compiler doesn't optimize away the call to Instance getter.
